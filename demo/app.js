@@ -11,7 +11,7 @@ var lecturerRouter = require('./routes/lecturer');
 
 var mongoose = require('mongoose');
 var url = 
-  "mongodb+srv://phonglinh214:nhatkop235@cluster0.0g3x0jm.mongodb.net/cloud"
+  "mongodb://localhost:27017"
 mongoose.connect(url, { useNewUrlParser: true}, (err) =>{
   if (!err) {
     console.log("DB connect successful !")
